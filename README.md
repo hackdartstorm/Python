@@ -1,1 +1,1 @@
-Daily Coding From 0 to  ∞
+Daily Coding From 0 to ∞
