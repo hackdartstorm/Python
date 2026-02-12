@@ -1,0 +1,105 @@
+# ==========================
+# macOS system files
+# ==========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+.Spotlight-V100
+.Trashes
+
+# ==========================
+# Windows system files
+# ==========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================
+# Python cache / compiled files
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================
+# Virtual environments
+# ==========================
+venv/
+env/
+.venv/
+ENV/
+
+# ==========================
+# IDE/editor files
+# ==========================
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+*.iml
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+# Emacs
+*~
+# Vim
+*.swp
+
+# ==========================
+# Local config / secrets / instance folders
+# ==========================
+instance/
+config.ini
+*.env
+secrets.json
+
+# ==========================
+# Data / model files
+# ==========================
+gpt2/
+data/
+*.h5
+*.pt
+*.ckpt
+*.model
+*.bin
+*.csv
+*.tsv
+
+# ==========================
+# Logs and temporary files
+# ==========================
+*.log
+*.tmp
+*.bak
+*.cache
+*.pid
+*.seed
+*.swp
+*.swo
+
+# ==========================
+# Git-specific
+# ==========================
+*.orig
+*.rej
+
+# ==========================
+# Jupyter Notebook / IPython
+# ==========================
+.ipynb_checkpoints
+*.ipynb
+
+# ==========================
+# Build / distribution
+# ==========================
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+pip-wheel-metadata/
