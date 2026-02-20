@@ -170,47 +170,100 @@ We welcome contributions of all kinds! Here's how to help:
 
 ### Ways to Contribute
 
-1. **Solve Issues** - Pick an issue and submit your solution
-2. **Improve Documentation** - Fix typos, add examples
-3. **Create New Issues** - Report bugs or suggest features
-4. **Help Others** - Answer questions in discussions
-5. **Review PRs** - Review and provide feedback
+| Contribution Type | Description | Good For |
+|-------------------|-------------|----------|
+| **🐛 Fix Bugs** | Fix issues in existing code | All levels |
+| **📝 Add Examples** | Contribute new Python examples | Beginner+ |
+| **🧪 Write Tests** | Add unit tests for code | Intermediate+ |
+| **📖 Improve Docs** | Enhance documentation | All levels |
+| **💡 Suggest Features** | Propose new learning modules | All levels |
+| **🔍 Review PRs** | Review and provide feedback | Advanced |
 
 ### Quick Start for Contributors
 
 ```bash
-# 1. Fork the repository
+# 1. Fork the repository on GitHub
+
 # 2. Clone your fork
 git clone https://github.com/YOUR_USERNAME/Python.git
 cd Python
 
 # 3. Create a branch
-git checkout -b feature/your-feature
+git checkout -b issue-<number>-your-name
 
 # 4. Make your changes
+# - Follow PEP 8 style guidelines
+# - Add comments explaining your code
+# - Include test cases if applicable
+
 # 5. Test your changes
+python -m pytest  # or run individual scripts
+
 # 6. Commit and push
 git add .
-git commit -m "feat: add your feature"
-git push origin feature/your-feature
+git commit -m "feat: add your feature description"
+git push origin issue-<number>-your-name
 
-# 7. Create a Pull Request
+# 7. Create a Pull Request on GitHub
 ```
 
 ### Contribution Guidelines
 
-- ✅ Follow PEP 8 style guidelines
-- ✅ Add comments explaining your code
-- ✅ Include test cases
-- ✅ Update documentation if needed
-- ✅ Be respectful and inclusive
+#### Code Style
+- **Variables/Functions:** `lowercase_with_underscores`
+- **Classes:** `PascalCase`
+- **Constants:** `UPPERCASE`
+- Follow [PEP 8](https://pep8.org/) style guidelines
+
+#### Commit Messages
+Use conventional commits format:
+```
+type: short description
+
+Optional details
+```
+
+**Types:**
+| Type | Description |
+|------|-------------|
+| `feat:` | New feature or example |
+| `fix:` | Bug fix |
+| `docs:` | Documentation changes |
+| `style:` | Formatting only |
+| `refactor:` | Code restructuring |
+| `test:` | Adding tests |
+
+**Examples:**
+```
+feat: add list comprehension examples
+fix: correct typo in calculator.py
+docs: update README with quickstart guide
+```
+
+#### Code Quality
+The project uses automated tools to ensure code quality:
+- **Black** - Code formatting
+- **Ruff** - Linting
+- **Bandit** - Security scanning
+
+Run locally before submitting:
+```bash
+# Format code
+black .
+
+# Lint code
+ruff check .
+
+# Security scan
+bandit -r .
+```
 
 ### Need Help?
 
-- 📖 [Contributing Guide](CONTRIBUTING.md)
-- 💬 [GitHub Discussions](https://github.com/hackdartstorm/Python/discussions)
-- 🐛 [Report an Issue](https://github.com/hackdartstorm/Python/issues)
-- 📧 [Contact Maintainers](mailto:learn@pythonmastery.dev)
+- 📖 [Contributing Guide](CONTRIBUTING.md) - Detailed guidelines
+- 💬 [GitHub Discussions](https://github.com/hackdartstorm/Python/discussions) - Ask questions
+- 🐛 [Report an Issue](https://github.com/hackdartstorm/Python/issues) - Bug reports & features
+- 📧 [Contact Maintainers](mailto:learn@pythonmastery.dev) - Direct contact
 
 ---
 
