@@ -12,7 +12,7 @@ def minSpeedOnTime(dist, hour):
         # Calculate time taken at speed 'mid'
         time = 0
         for i in range(len(dist) - 1):
-            time += math.ceil(dist[i] / mid)
+            time += (dist[i] + mid - 1) // mid
         # Last train doesn't need to wait for integer hour
         time += dist[-1] / mid
         if time <= hour:
