@@ -8,7 +8,7 @@ def minSpeedOnTime(dist, hour):
     left, right = 1, 10**7
     ans = -1
     while left <= right:
-        mid = (left + right) // 2     
+        mid = (left + right) // 2
         # Calculate time taken at speed 'mid'
         time = 0
         for i in range(len(dist) - 1):
