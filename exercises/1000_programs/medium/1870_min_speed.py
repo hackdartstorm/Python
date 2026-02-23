@@ -15,7 +15,7 @@ def minSpeedOnTime(dist, hour):
             time += (dist[i] + mid - 1) // mid
         # Last train doesn't need to wait for integer hour
         time += dist[-1] / mid
-        if time <= hour:
+        if time <= hour + 1e-9:
             ans = mid
             right = mid - 1
         else:
