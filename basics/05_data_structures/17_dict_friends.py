@@ -35,8 +35,8 @@ ram_language = input("Enter your Favourite Programming Language : ")
 shyam_language = input("Enter your Favourite Programming Language : ")
 gita_language = input("Enter your Favourite Programming Language : ")
 ritu_language = input("Enter your Favourite Programming Language : ")
-friends_languages = {"Ram":None,"Shyam":None,"Gita":None,"Ritu":None}
-friends_languages.update({'Ram':ram_language})
+friends_languages = {"ram":None,"Shyam":None,"Gita":None,"Ritu":None}
+friends_languages.update({'ram':ram_language})
 friends_languages.update({'Shyam':shyam_language})
 friends_languages.update({'Gita':gita_language})
 friends_languages.update({'Ritu':ritu_language})

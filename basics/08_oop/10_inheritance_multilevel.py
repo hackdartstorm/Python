@@ -12,10 +12,10 @@ class Pets(Animals):
 
 class Dog(Pets):
     # We don't use @staticmethod As we use Self
-    def Bark(self):
+    def bark(self):
         self.bark = True
         print(self.bark)
 
 
 simbu = Dog()
-simbu.Bark()
+simbu.bark()

@@ -11,11 +11,11 @@ class Employee():
         self.increment = increment
     
     @property
-    def SalaryAfterIncrement(self):
+    def salary_after_increment(self):
         return self._salary + (self._salary * (self.increment/100))
     
-    @SalaryAfterIncrement.setter
-    def SalaryAfterIncrement(self,real_salary):
+    @salary_after_increment.setter
+    def salary_after_increment(self, real_salary):
         if real_salary <= 5000:
             self.increment = 10
 
@@ -32,12 +32,12 @@ class Employee():
 
 
 #Output 
-Rajesh = Employee()
-Rajesh.SalaryAfterIncrement = 50000 
-print(Rajesh.SalaryAfterIncrement) #Output 51000
+rajesh = Employee()
+rajesh.salary_after_increment = 50000
+print(rajesh.salary_after_increment) #Output 51000
 
-Rajesh.SalaryAfterIncrement = 5000
-print(Rajesh.SalaryAfterIncrement) #Output 5500
+rajesh.salary_after_increment = 5000
+print(rajesh.salary_after_increment) #Output 5500
 
 
 

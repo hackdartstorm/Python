@@ -22,33 +22,33 @@ class GameCharacter:
         self._health = health  # Private variable for health
 
     @property
-    def Name(self):
+    def name(self):
         return self._name
 
     @property
-    def Level(self):
+    def level(self):
         return self._level
 
     @property
-    def Health(self):
+    def health(self):
         return self._health
 
-    @Name.setter
-    def Name(self, value):
+    @name.setter
+    def name(self, value):
         if value != "":
             self._name = value
         else:
             print("Name Can't be Blank!")
 
-    @Level.setter
-    def Level(self, value):
+    @level.setter
+    def level(self, value):
         if 1 <= value <= 50:
             self._level = value
         else:
             print("Level Must be between 1 and 50")
 
-    @Health.setter
-    def Health(self, value):
+    @health.setter
+    def health(self, value):
         if 0 <= value <= 100:
             self._health = value
         else:
@@ -59,12 +59,12 @@ class GameCharacter:
 Adam = GameCharacter("Adam", 45, 98)
 
 print("Output")
-print(f"\tName: {Adam.Name}\n\tLevel: {Adam.Level}\n\tHealth: {Adam.Health}\n")
+print(f"\tName: {Adam.name}\n\tLevel: {Adam.level}\n\tHealth: {Adam.health}\n")
 
 print("Updated Output:\n")
 # Trying to set invalid values
-Adam.Name = ""
-Adam.Level = -51
-Adam.Health = -101
+Adam.name = ""
+Adam.level = -51
+Adam.health = -101
 
-print(f"\tName: {Adam.Name}\n\tLevel: {Adam.Level}\n\tHealth: {Adam.Health}\n")
+print(f"\tName: {Adam.name}\n\tLevel: {Adam.level}\n\tHealth: {Adam.health}\n")

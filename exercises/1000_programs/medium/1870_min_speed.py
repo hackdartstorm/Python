@@ -1,6 +1,6 @@
 import math
 
-def minSpeedOnTime(dist, hour):
+def min_speed_on_time(dist, hour):
     # If it's impossible to cover all trains even at infinite speed
     # (need at least 1 hour per train except the last one)
     if len(dist) - 1 >= hour:
@@ -23,6 +23,6 @@ def minSpeedOnTime(dist, hour):
     return ans
 # Driver code to test locally
 if __name__ == "__main__":
-    print(minSpeedOnTime([1,3,2], 6))    # Expected: 1
-    print(minSpeedOnTime([1,3,2], 2.7))  # Expected: 3
-    print(minSpeedOnTime([1,3,2], 1.9))  # Expected: -1
+    print(min_speed_on_time([1, 3, 2], 6))    # Expected: 1
+    print(min_speed_on_time([1, 3, 2], 2.7))  # Expected: 3
+    print(min_speed_on_time([1, 3, 2], 1.9))  # Expected: -1

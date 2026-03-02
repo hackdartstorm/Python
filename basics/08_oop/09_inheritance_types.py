@@ -9,15 +9,15 @@ Types of Inheritance:
 class LivingThings:
     isLive = True
 
-    def CanHearSound(self):
+    def can_hear_sound(self):
         print("We Can Hear Sound")
 
 
 class HumanBeings(LivingThings):  # Single Level Inheritance
-    def Intelligent(self):
+    def intelligent(self):
         print("Most Intelligent!")
 
 
 class Animals(HumanBeings):  # Multi-Level Inheritance
-    def Powerful(self):
+    def powerful(self):
         print("Powerful")

@@ -11,5 +11,5 @@ def remove_and_strip(string_list, word):
     return cleaned_list
 
 
-string_list = ["Ram","Shyam","Gyan",'Pyan',"Myan","an"]
+string_list = ["ram","Shyam","Gyan",'Pyan',"Myan","an"]
 print(remove_and_strip(string_list, "an"))

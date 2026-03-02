@@ -6,7 +6,7 @@ class LivingThings():
         print(f"LivingThings Constructor Called ! ")
 
     @classmethod #--->The @classmethod decorator is used to work with class variables (class values) using the class (cls) instead of instance variables (self).”
-    def CanHearSound(self):
+    def can_hear_sound(self):
         print(f"We Are Hear Sound {self.isLive}")
     
 class HumanBeings(LivingThings):   
@@ -15,7 +15,7 @@ class HumanBeings(LivingThings):
         super().__init__()
         print("HumanBeings Constructor Called !")
 
-    def Intelligent():
+    def intelligent():
         print("Most Intelligent ? ")
 
 class Animals(HumanBeings): 
@@ -24,9 +24,9 @@ class Animals(HumanBeings):
         super().__init__()
         print("Animals Constructor Called !")
 
-    def Powerful():
+    def powerful():
         print("Powerful")
 
-Ram = LivingThings()
-Ram.isLive = 12
-Ram.CanHearSound()
+ram = LivingThings()
+ram.isLive = 12
+ram.can_hear_sound()

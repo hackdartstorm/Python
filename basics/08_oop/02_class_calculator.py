@@ -7,26 +7,26 @@ class Calculator:
         self.choose = choose
         self.num = num
 
-    def Square(self, Num):
-        self.Num = Num
-        Num = Num ** 2  # For Square
-        result = round(Num, 2)
+    def square(self, num):
+        self.num = num
+        num = num ** 2  # For Square
+        result = round(num, 2)
         print(f"Here is Your Square: {result}")
 
-    def Cube(self, Num):
-        self.Num = Num
-        Num = Num ** 3  # For Cube
-        result = round(Num, 2)
+    def cube(self, num):
+        self.num = num
+        num = num ** 3  # For Cube
+        result = round(num, 2)
         print(f"Here is Your Cube: {result}")
 
-    def SquareRoot(self, Num):
-        self.Num = Num
-        Num = Num ** 0.5  # For Square Root
-        result = round(Num, 2)
+    def square_root(self, num):
+        self.num = num
+        num = num ** 0.5  # For Square Root
+        result = round(num, 2)
         print(f"Here is Your SquareRoot: {result}")
 
     @staticmethod
-    def Wrong():
+    def wrong():
         print("Wrong Number!")
 
 
@@ -35,10 +35,10 @@ Number = int(input("Enter the Number: "))
 num = Calculator(choose, Number)
 
 if choose == 1:
-    num.Square(Number)
+    num.square(Number)
 elif choose == 2:
-    num.Cube(Number)
+    num.cube(Number)
 elif choose == 3:
-    num.SquareRoot(Number)
+    num.square_root(Number)
 else:
-    num.Wrong()
+    num.wrong()

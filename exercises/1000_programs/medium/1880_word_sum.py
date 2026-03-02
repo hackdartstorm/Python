@@ -5,9 +5,9 @@ def word_to_number(word: str) -> int:
     return int(num_str)
 
 
-def is_sum_equal(firstWord: str, secondWord: str, targetWord: str) -> bool:
-    return word_to_number(firstWord) + word_to_number(secondWord) == word_to_number(
-        targetWord
+def is_sum_equal(first_word: str, second_word: str, target_word: str) -> bool:
+    return word_to_number(first_word) + word_to_number(second_word) == word_to_number(
+        target_word
     )
 
 

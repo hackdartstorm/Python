@@ -1,12 +1,12 @@
 # Set Methods Example
 
-set1 = {1, 2, 3, 4, 5, False, True, "Aman", 23.23, "Rajesh", "Patel", "Sharma"}
-set2 = {1, 2, 3, 4, 5, "Rajesh", "Patel", "ranjit"}
+set1 = {1, 2, 3, 4, 5, False, True, "Aman", 23.23, "rajesh", "Patel", "Sharma"}
+set2 = {1, 2, 3, 4, 5, "rajesh", "Patel", "ranjit"}
 set3 = {462, 3297}
 set4 = {"freefire", "enormous"}
 
 # Adding and removing elements
-set1.add("Ram chandra ")        # Add single element
+set1.add("ram chandra ")        # Add single element
 set1.clear()                    # Remove all elements
 print(set1.copy())              # Create a copy
 

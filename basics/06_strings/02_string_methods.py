@@ -4,7 +4,7 @@ name = "ram is a good good Boy 2323"
 print(name.capitalize()) #Make the first letter of the word uppercase
 print(name.count("good")) #Counts the given string
 print(name.endswith("Boy")) #check that the given String ends with Boy or not 
-print(name.startswith("Ram")) #check that the given String Starts with Ram or not 
+print(name.startswith("ram")) #check that the given String Starts with ram or not
 print(name.find("good")) #return the index of the first occurence of the given Str
 print(name.index("good")) #return the index of the first occurence of the given Str
 print(name.isalnum()) #check the given string is alpha-numeric or not 

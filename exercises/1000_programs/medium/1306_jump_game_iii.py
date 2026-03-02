@@ -1,4 +1,4 @@
-def canReach(arr: list[int], start: int) -> bool:
+def can_reach(arr: list[int], start: int) -> bool:
     # 1. Initialize the queue with our starting position
     queue = [start]
     # 2. Keep track of visited indices so we don't get stuck in a loop
@@ -27,10 +27,10 @@ def canReach(arr: list[int], start: int) -> bool:
 # --- Test Cases ---
 if __name__ == "__main__":
     # Test 1: Should be True (can reach index 5 or 6)
-    print(f"Test 1: {canReach([4,2,3,0,3,1,2], 5)}") 
+    print(f"Test 1: {can_reach([4, 2, 3, 0, 3, 1, 2], 5)}")
     
     # Test 2: Should be True (start is already 0)
-    print(f"Test 2: {canReach([4,2,3,0,3,1,2], 0)}") 
+    print(f"Test 2: {can_reach([4, 2, 3, 0, 3, 1, 2], 0)}")
     
     # Test 3: Should be False (cannot reach 0)
-    print(f"Test 3: {canReach([3,0,2,1,2], 2)}")
+    print(f"Test 3: {can_reach([3, 0, 2, 1, 2], 2)}")

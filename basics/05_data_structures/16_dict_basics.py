@@ -1,12 +1,12 @@
 # Dictionary Methods Example
 
 dictionary_data = {
-    "Ram": 100,
+    "ram": 100,
     "Kiran": 90,
     "Sneha": 99.999,
     "String": 33.33,
     "l1": [12, 22],
-    "t1": ("Ram", "Sita")
+    "t1": ("ram", "Sita")
 }
 
 print(dictionary_data.items())  # View all key-value pairs
@@ -15,9 +15,9 @@ print(dictionary_data.keys())   # Get all keys
 print(dictionary_data.values()) # Get all values
 print(dictionary_data.get("Rama"))  # Safe access (returns None if key missing)
 
-dictionary_data.update({"Ram": 33.333})  # Update existing key
+dictionary_data.update({"ram": 33.333})  # Update existing key
 print(dictionary_data.copy())       # Create a shallow copy
-print(dictionary_data.pop("Ram"))   # Remove key and return value
+print(dictionary_data.pop("ram"))   # Remove key and return value
 
 # Create new dict from keys
 print(dictionary_data.fromkeys({"Rakesh", "Prasant"}))  
