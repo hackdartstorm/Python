@@ -7,7 +7,7 @@ class Programmer:
     Company = "Microsoft"
     Salary = 200000
 
-    def __init__(self,name):
+    def __init__(self, name):
         self.name = name
 
 Rajvir = Programmer("Rajvir")

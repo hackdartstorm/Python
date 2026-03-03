@@ -3,6 +3,7 @@ Write a python function to remove a given word from a list ad strip it at the sa
 time.
 """
 
+
 def remove_and_strip(string_list, word):
     cleaned_list = []
     for item in string_list:
@@ -11,5 +12,5 @@ def remove_and_strip(string_list, word):
     return cleaned_list
 
 
-string_list = ["Ram","Shyam","Gyan",'Pyan',"Myan","an"]
+string_list = ["Ram", "Shyam", "Gyan", 'Pyan', "Myan", "an"]
 print(remove_and_strip(string_list, "an"))

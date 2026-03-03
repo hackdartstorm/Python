@@ -1,5 +1,5 @@
-'''Question1.Create an empty dictionary. Allow 4 friends to enter their favorite language as
-value and use key as their names. Assume that the names are unique.'''
+"""Question1.Create an empty dictionary. Allow 4 friends to enter their favorite language as
+value and use key as their names. Assume that the names are unique."""
 
 # Answer Type 1
 friends_languages = {}
@@ -35,9 +35,9 @@ ram_language = input("Enter your Favourite Programming Language : ")
 shyam_language = input("Enter your Favourite Programming Language : ")
 gita_language = input("Enter your Favourite Programming Language : ")
 ritu_language = input("Enter your Favourite Programming Language : ")
-friends_languages = {"Ram":None,"Shyam":None,"Gita":None,"Ritu":None}
-friends_languages.update({'Ram':ram_language})
-friends_languages.update({'Shyam':shyam_language})
-friends_languages.update({'Gita':gita_language})
-friends_languages.update({'Ritu':ritu_language})
+friends_languages = {"Ram": None, "Shyam": None, "Gita": None, "Ritu": None}
+friends_languages.update({'Ram': ram_language})
+friends_languages.update({'Shyam': shyam_language})
+friends_languages.update({'Gita': gita_language})
+friends_languages.update({'Ritu': ritu_language})
 print(friends_languages)

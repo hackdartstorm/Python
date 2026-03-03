@@ -3,7 +3,8 @@ with S.
 l = ["Harry", "Soham", "Sachin", "Rahul","Harish","Hetbe","Rajesh","Harish Meheta"]"""
 
 
-names_list = ["Harry", "Soham", "Sachin", "Rahul","Harish","Hetbe","Rajesh","Harish Meheta"]
+names_list = ["Harry", "Soham", "Sachin", "Rahul", "Harish", "Hetbe", "Rajesh",
+              "Harish Meheta"]
 for name in names_list:
-    if(name.startswith("H")):
+    if name.startswith("H"):
         print(f"Greet Sended to {name}")

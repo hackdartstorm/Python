@@ -2,12 +2,17 @@
 def add(first_num, second_num):
     total = first_num + second_num
     return total
+
+
 result = add(2, 9)
 print(result)
+
 
 def calculate_square(number):
     squared_result = number * number
     return squared_result
+
+
 result = calculate_square(9)
 print(result)
 

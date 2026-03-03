@@ -2,6 +2,7 @@ import python_weather  # Library to fetch weather data in Python
 import asyncio
 from datetime import datetime
 
+
 async def main() -> None:
     """
     Main function to:
@@ -46,6 +47,7 @@ async def main() -> None:
         # Print the hottest day and the average temperature
         print(f"The hottest day was {hottest_day}")
         print(f"The average temperature is {avg_temp:.2f}°F")  # formatted to 2 decimals
+
 
 if __name__ == '__main__':
     asyncio.run(main())

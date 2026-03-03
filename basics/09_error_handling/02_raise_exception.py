@@ -2,6 +2,7 @@ def divide_numbers(numerator: int, denominator: int) -> float:
     division_result = numerator / denominator
     return division_result
 
+
 num1 = int(input("Enter the Number : "))
 num2 = int(input("Enter the Number : "))
 if num2 == 0:

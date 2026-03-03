@@ -7,14 +7,6 @@ def copy_file(source, destination):
     with open(destination, "w") as f:
         f.write(data)
 
+
 copy_file("this.txt", "pcopy.txt")
-
-
-
-
-
-
-
-
-
     

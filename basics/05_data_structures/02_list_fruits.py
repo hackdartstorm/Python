@@ -1,9 +1,8 @@
-#1. Write a program to store a fruit in a list entered by the user.
-fruit_name = input("Enter a Fruit Name : ") #User input the 7 fruits
-fruits_list = [] #Creates a Blank list
-fruits_list.append(fruit_name) #Append the userinput fruits in the empty list
-print(fruits_list) #Print the list
-
+# 1. Write a program to store a fruit in a list entered by the user.
+fruit_name = input("Enter a Fruit Name : ")  # User input the 7 fruits
+fruits_list = []  # Creates a Blank list
+fruits_list.append(fruit_name)  # Append the userinput fruits in the empty list
+print(fruits_list)  # Print the list
 
 
 # 2. Write a program to store seven fruits in a list entered by the user.
@@ -23,4 +22,3 @@ fruits_list.append(fruit5)
 fruits_list.append(fruit6)
 fruits_list.append(fruit7)
 print(fruits_list)
-

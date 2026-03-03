@@ -6,13 +6,14 @@ from importlib.metadata import version
 
 GPT_CONFIG_500M = {
     "vocab_size": 200256,    # Vocabulary size
-    "context_length": 1024, # Context length
-    "emb_dim": 768,         # Embedding dimension
-    "n_heads": 12,          # Number of attention heads
-    "n_layers": 12,         # Number of layers
-    "drop_rate": 0.0,       # Dropout rate
-    "qkv_bias": False       # Query-Key-Value bias
+    "context_length": 1024,  # Context length
+    "emb_dim": 768,          # Embedding dimension
+    "n_heads": 12,           # Number of attention heads
+    "n_layers": 12,          # Number of layers
+    "drop_rate": 0.0,        # Dropout rate
+    "qkv_bias": False        # Query-Key-Value bias
 }
+
 
 class GPTModel(nn.Module):
     def __init__(self, cfg):
@@ -39,7 +40,8 @@ class GPTModel(nn.Module):
         x = self.final_norm(x)
         logits = self.out_head(x)
         return logits
-    
+
+
 tokenizer = tiktoken.get_encoding("o200k_base")
 
 batch = []
@@ -88,6 +90,7 @@ def generate_text_simple(model, idx, max_new_tokens, context_size):
         idx = torch.cat((idx, idx_next), dim=1)  # (batch, n_tokens+1)
 
     return idx
+
 
 model.eval(); 
 

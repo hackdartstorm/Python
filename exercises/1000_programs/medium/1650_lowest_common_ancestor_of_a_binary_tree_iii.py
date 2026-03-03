@@ -5,6 +5,7 @@ class Node:
         self.right = None
         self.parent = None
 
+
 def lowest_common_ancestor(p: 'Node', q: 'Node') -> 'Node':
     """
     Find the lowest common ancestor of two nodes in a binary tree 
@@ -23,6 +24,7 @@ def lowest_common_ancestor(p: 'Node', q: 'Node') -> 'Node':
         b = b.parent if b.parent else p
 
     return a
+
 
 if __name__ == "__main__":
     # Example Setup:
@@ -49,3 +51,4 @@ if __name__ == "__main__":
     
     print(f"Input Nodes: {node6.val}, {node2.val}")
     print(f"LCA Output: {result.val if result else 'None'}")
+    

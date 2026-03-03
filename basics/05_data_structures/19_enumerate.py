@@ -1,5 +1,5 @@
-#Before Using emumerate
-items_list = ["Hello",23,False,True,45,"Ram"]
+# Before Using emumerate
+items_list = ["Hello", 23, False, True, 45, "Ram"]
 index = 0
 for item in items_list:
     print(f"The item number at index {index} is {item}")
@@ -9,4 +9,3 @@ for item in items_list:
 
 for index, item in enumerate(items_list):
     print(f"The item number at index {index} is {item}")
-

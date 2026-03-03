@@ -21,6 +21,3 @@ Everyone thought it was foolish to ignore the hardworking donkey,
 but the donkey continued doing its job without complaining.
 Calling the effort lazy or foolish did not change how responsible the donkey really was.
 """
-
-    
-    

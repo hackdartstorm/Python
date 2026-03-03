@@ -13,4 +13,3 @@ class GPTDatasetV1(Dataset):
 
         # Tokenize the entire text
         token_ids = tokenizer.encode(txt, allowed_special={"
-

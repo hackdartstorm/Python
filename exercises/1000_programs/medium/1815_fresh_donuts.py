@@ -1,5 +1,6 @@
 from functools import lru_cache
 
+
 def maxHappyGroups(batchSize, groups):
     # Time Complexity: O(k^m) where k is batchSize and m is number of groups
     # Space Complexity: O(batchSize)
@@ -48,6 +49,7 @@ def maxHappyGroups(batchSize, groups):
 
     happy_groups += dfs(0, tuple(remainder_counts))
     return happy_groups
+
 
 # Driver Code
 if __name__ == "__main__":

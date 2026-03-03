@@ -3,8 +3,10 @@ Create a class ‘Pets’ from a class ‘Animals’ and further create a class 
 ‘Pets’. Add a method ‘bark’ to class ‘Dog’.
 """
 
-class Animals():
+
+class Animals:
     pass
+
 
 class Pets(Animals):
     pass

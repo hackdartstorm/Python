@@ -12,7 +12,7 @@ dictionary_data = {
 print(dictionary_data.items())  # View all key-value pairs
 print(dictionary_data["l1"])    # Access value by key
 print(dictionary_data.keys())   # Get all keys
-print(dictionary_data.values()) # Get all values
+print(dictionary_data.values())  # Get all values
 print(dictionary_data.get("Rama"))  # Safe access (returns None if key missing)
 
 dictionary_data.update({"Ram": 33.333})  # Update existing key

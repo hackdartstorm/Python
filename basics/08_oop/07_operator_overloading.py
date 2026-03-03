@@ -9,12 +9,14 @@ str__() # used to set what gets displayed upon calling str(obj)
 __len__() # used to set what gets displayed upon calling.__len__() or len(obj)
 """
 
-class Addition():
+
+class Addition:
     def __init__(self, val):
         self.val = val
 
     def __add__(self, other):
         return self.val + other.val
+
 
 first_number = Addition(1)
 second_number = Addition(9)
