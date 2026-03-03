@@ -1,5 +1,6 @@
 """ This program generates a fun story by asking the user for different types of words"""
 
+
 def mad_libs_story():
     # Ask the user for words
     name = input("Enter a name: ")
@@ -24,6 +25,7 @@ def mad_libs_story():
 
     # Print the story
     print(story)
+
 
 # Run the story generator
 if __name__ == "__main__":

@@ -8,5 +8,3 @@ with open("Tables.py", "w") as output_file:
 
 with open("Tables.py") as read_file:
     print(read_file.read())
-
-

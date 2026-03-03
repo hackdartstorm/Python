@@ -1,4 +1,4 @@
-#1.
+# 1.
 def check_val(val):
     match val:
         case 1:
@@ -9,12 +9,12 @@ def check_val(val):
             return "99"
         case _:
             return "aagye line me"
-        
+
+
 print(check_val(int(input("Enter between this [1 or 404 or 99] : "))))
 
 
-
-#2.
+# 2.
 def http_status(status): 
     match status:  
         case 200: 

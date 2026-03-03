@@ -12,8 +12,8 @@ You are selected!
 '''
 name_replaced = letter_template.replace("<|Name|>", user_name)
 date_replaced = name_replaced.replace("<|Date|>", date)
-name_length = len(user_name) # Count for name length
-final_count = 25 + name_length # Count for name
+name_length = len(user_name)  # Count for name length
+final_count = 25 + name_length  # Count for name
 output_start = name_replaced[:final_count]
 output_end = date_replaced[final_count:]
 # print(output_end)

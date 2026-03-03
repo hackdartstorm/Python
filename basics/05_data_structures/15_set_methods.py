@@ -32,7 +32,3 @@ set1.remove(False)  # Remove specific element (raises error if missing)
 set1.update(set2, set3, set4)  # Add all elements from other sets
 
 print(set1)  # Print the final set 
-
-
-
-

@@ -6,7 +6,7 @@ with open('/Volumes/DartStorm/Offensive/Books/Coding 2026 Books/data.txt', "r", 
 preprocessed = re.split(r'([,.:;?_!"()\']|--|\s)', raw_text)
 preprocessed = [item.strip() for item in preprocessed if item.strip()]
 all_words = sorted(set(preprocessed))
-vocab = {token:String  for String,token in enumerate(all_words)}
+vocab = {token: String for String, token in enumerate(all_words)}
 # print("Vocab Size", (vocab)) #token:String
 
 """
@@ -17,13 +17,14 @@ for i, item in enumerate(vocab.items()):
         break
 """
 
-class SimpleTokenizerV1:
-    def __init__(self,vocab):
-        self.str_to_int = vocab
-        self.int_to_str = {i:s for s,i in vocab.items()}
 
-    def encode(self,text):
-        preprocessed = re.split(r'([,.:;?_!"()\'] | -- |\s)',text)
+class SimpleTokenizerV1:
+    def __init__(self, vocab):
+        self.str_to_int = vocab
+        self.int_to_str = {i: s for s, i in vocab.items()}
+
+    def encode(self, text):
+        preprocessed = re.split(r'([,.:;?_!"()\'] | -- |\s)', text)
         preprocessed = [item.strip() for item in preprocessed if item.strip()]
         ids = [self.str_to_int[s] for s in preprocessed]
         return ids
@@ -33,6 +34,7 @@ class SimpleTokenizerV1:
         # Replace spaces before the specified punctuations
         text = re.sub(r'\s+([,.?!"()\'])', r'\1', text)
         return text
+    
     
 tokenizer = SimpleTokenizerV1(vocab)
 Text = """
@@ -51,7 +53,7 @@ text = tokenizer.decode(ids)
 print(f"\tDecoded Text :-\n\n{text}")
 print()
 
-    
+
 
 
 dataloader = create_dataloader_v1(raw_text, batch_size=8, max_length=4, stride=4, shuffle=False)

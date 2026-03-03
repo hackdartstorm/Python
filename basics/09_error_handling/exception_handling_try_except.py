@@ -2,6 +2,7 @@ def divide_numbers(first_num: int, second_num: int) -> int:
     result = first_num / second_num
     return result
 
+
 try:
     first_number = int(input("Enter the Number: "))
     second_number = int(input("Enter the Number: "))

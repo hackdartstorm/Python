@@ -39,7 +39,3 @@ from tqdm import tqdm
 for i in tqdm(range(len(test_data))):
     response = llm.generate(test_data[i])
     test_data[i]["base_model"] = response
-
-
-
-

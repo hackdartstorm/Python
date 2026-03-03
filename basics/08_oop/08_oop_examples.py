@@ -1,4 +1,4 @@
-#Professional Coding
+# Professional Coding
 class Monster():  # Class definition
     def __init__(self, power, health, speed):  # Constructor to initialize object
         self._power = power    # Private variable for power
@@ -61,8 +61,7 @@ devil.Power = 89
 print(f"Here is Your Health : {devil.Health} Power : {devil.Power} & Speed : {devil.Speed}\n")
 
 
-
-#Normal Coding
+# Normal Coding
 """class Monster():
     def __init__(self,Health,Power,Speed):
         self.health = Health

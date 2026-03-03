@@ -22,4 +22,3 @@ file_handle = open("newfile.txt")
 all_lines = file_handle.readlines()
 print(all_lines)
 file_handle.close()
-

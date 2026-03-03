@@ -3,6 +3,7 @@ Question1.Write a class 'Complex' to represent complex numbers, along with overl
 operators '+' and '*' which adds and multiplies them.
 """
 
+
 class Complex():
     def __init__(self, real_part, imaginary_part):
         self.real_part = real_part
@@ -13,6 +14,7 @@ class Complex():
 
     def __str__(self):
         return f"{self.real_part} + {self.imaginary_part}i"
+
 
 complex_number1 = Complex(1, 2)
 complex_number2 = Complex(3, 4)

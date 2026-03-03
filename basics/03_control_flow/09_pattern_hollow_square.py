@@ -7,7 +7,7 @@
 
 size = int(input("Enter the Number :"))
 for row in range(1, size + 1):
-    if(row == 1 or row == size):
+    if row == 1 or row == size:
         print(f"*" * size, end="")
     else:
         print(f"*", end="")

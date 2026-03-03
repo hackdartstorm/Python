@@ -10,9 +10,3 @@ with open("poems.txt") as file_handle:
         print(f"Twinkle Found {word_count} times")
     else:
         print("Twinkle not Found")
-
-
-
-        
-    
-      

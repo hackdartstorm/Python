@@ -17,6 +17,8 @@ def is_even(number):
     if number % 2 == 0:
         return True
     return False
+
+
 even_numbers = filter(is_even, numbers_list)
 print(list(even_numbers))
 
