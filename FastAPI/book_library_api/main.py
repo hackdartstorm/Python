@@ -48,9 +48,21 @@ class Book(BaseModel):
 # In-memory data storage (replace with database in production)
 books_db: list[Book] = [
     Book(book_id=1, title="Satanás", author="Mario Mendoza", year=2002),
-    Book(book_id=2, title="Cien años de soledad", author="Gabriel Garcia Marquez", year=1967),
-    Book(book_id=3, title="El olvido que seremos", author="Hector Abad Faciolince", year=2006),
-    Book(book_id=4, title="Lo que no tiene nombre ", author="Piedad Bonnett", year=2013),
+    Book(
+        book_id=2,
+        title="Cien años de soledad",
+        author="Gabriel Garcia Marquez",
+        year=1967,
+    ),
+    Book(
+        book_id=3,
+        title="El olvido que seremos",
+        author="Hector Abad Faciolince",
+        year=2006,
+    ),
+    Book(
+        book_id=4, title="Lo que no tiene nombre ", author="Piedad Bonnett", year=2013
+    ),
 ]
 
 # Auto-increment ID counter
