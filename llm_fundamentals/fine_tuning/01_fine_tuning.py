@@ -1,6 +1,11 @@
 import json
 
-file_path = "../../WEIGHT-LOADING/instruction-data.json"
+# Path is resolved relative to this file's folder, so run the script from
+# `llm_fundamentals/fine_tuning/`. This previously pointed at
+# `../../WEIGHT-LOADING/instruction-data.json`, a path that never existed and
+# whose folder has now been removed as a duplicate of `weight_loading/`. The
+# dataset actually lives in the top-level `data/` folder.
+file_path = "../../data/instruction-data.json"
 
 with open(file_path, "r") as file:
     data = json.load(file)
